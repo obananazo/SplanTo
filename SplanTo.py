@@ -194,14 +194,14 @@ def delete_tracks(sp, playlist_id, tracks):
     for track in tracks:
         track_entries.append(track)
         
-        inp_validation = input('\n\nAre you sure you want to clear your playlist of old songs? (y/n): ').lower()
-        
-        if inp_validation == 'y':
-            sp.playlist_remove_all_occurrences_of_items(playlist_id, items=track_entries)
-            sp.playlist_remove_specific_occurrences_of_items(playlist_id, items=track_entries)
-            print('Playlist has been cleared of old songs.')
-        else:
-            print('Aborted!')
+    inp_validation = input('\n\nAre you sure you want to clear your playlist of old songs? (y/n): ').lower()
+    
+    if inp_validation == 'y':
+        sp.playlist_remove_all_occurrences_of_items(playlist_id, items=track_entries)
+        sp.playlist_remove_specific_occurrences_of_items(playlist_id, items=track_entries)
+        print('Playlist has been cleared of old songs.')
+    else:
+        print('Aborted!')
 
 
 if __name__ == '__main__':
