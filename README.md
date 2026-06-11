@@ -1,6 +1,8 @@
 # SplanTo
 SplanTo automatically removes tracks older than one week from your Spotify playlist `(default: description='Plan to hear')`, keeping it fresh and manageable.
 
+SplanTo is currently a CLI tool only.
+
 ## Preview
 
 ![](.assets/SplanTo_Preview.png)
